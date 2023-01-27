@@ -55,7 +55,7 @@ async def on_member_join(member):
             await member.add_roles(clown)
             await member.add_roles(admin)
         else:
-            member.add_roles(role)
+            await member.add_roles(role)
 
 
     except discord.HTTPException:
